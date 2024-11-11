@@ -1,5 +1,15 @@
-div {
+/*div {
     border: 1px solid black;
+}*/
+
+hr {
+    width: 217px;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .ticket-container {
@@ -8,6 +18,11 @@ div {
     height: 273px;
     background: #EFC684;
     border-radius: 10px;
+    display: flex;
+}
+
+.main-section {
+    width: 289px;
 }
 
 .ticket-text {
@@ -18,26 +33,67 @@ div {
     margin: 26px 0 0 20px;
 }
 
+.ticket-details {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 63px;
+}
+
 .ticket-category {
     width: 82px;
     height: 44px;
     margin-top: 36px;
     margin-left: 27px;
-    border: 1px;
+    margin-bottom: 39px;
+    border: solid 1px black;
     font-size: 20px;
+    justify-content: center;
 }
 
 .ticket-price {
     width: 82px;
     height: 44px;
     margin-top: 36px;
-    margin-left: 190px;
-    border: 1px;
+    margin-left: 10px;
+    margin-bottom: 39px;
+    border: solid 1px black;
     font-size: 20px;
+    justify-content: center;
 }
 
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 52px;
+    justify-content: space-around;
+}
+
+.movie-hour {
+    margin-top: 26px;
+    width: 85px;
+    height: 23px;
+}
+
+.movie-localisation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gate {
+    width: 82px;
+    height: 23px;
+}
+
+.seat {
+    width: 92px;
+    height: 23px;
+}
+
+.ticket-number {
+    width: 177px;
+    height: 23px;
+}
+
+.entrance-coupon {
+    display: flex;
 }
