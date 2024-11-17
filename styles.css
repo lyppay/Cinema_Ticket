@@ -35,19 +35,23 @@ hr {
 
 .ticket-details {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 63px;
+    justify-content: flex-start;
+}
+
+.ticket-details div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .ticket-category {
     width: 82px;
     height: 44px;
-    margin-top: 36px;
-    margin-left: 27px;
-    margin-bottom: 39px;
+    margin: 36px 30px 39px 27px;
     border: solid 1px black;
     font-size: 20px;
     justify-content: center;
+    text-transform: uppercase;
 }
 
 .ticket-price {
@@ -93,7 +97,17 @@ hr {
     width: 177px;
     height: 23px;
 }
-
 .entrance-coupon {
+    border-left: 1px solid;
+    border-left-style: dashed;
+    border-color: #DB0808;
+}
+
+.popcorn-image-container {
     display: flex;
+    margin: 45px;
+}
+
+.popcorn-image-container:hover img {
+    transition: margin-top 2s ease-in-out;
 }
