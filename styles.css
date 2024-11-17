@@ -1,11 +1,3 @@
-/*div {
-    border: 1px solid black;
-}*/
-
-hr {
-    width: 217px;
-}
-
 .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -108,6 +100,21 @@ hr {
     margin: 45px;
 }
 
-.popcorn-image-container:hover img {
-    transition: margin-top 2s ease-in-out;
+.small-popcorn {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 20px;
+    opacity: 0;
+}
+
+.popcorn-image-container:hover .small-popcorn {
+    transition: 2s;
+    margin-top: 0;
+    opacity: 1;
+}
+
+.popcorn-cup:hover {
+    transition: 2s;
+    margin-top: 20px;
+    rotate: -5deg;
 }
