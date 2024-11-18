@@ -24,7 +24,8 @@ body {
 
 .ticket-details-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    margin-right: 30px;
 }
 
 .ticket-details {
@@ -41,13 +42,7 @@ body {
 }
 
 .ticket-category {
-    margin-right: 30px;
-    margin-left:27px;
     text-transform: uppercase;
-}
-
-.ticket-price {
-    margin-left: 10px;
 }
 
 .movie-details-container {
@@ -55,6 +50,7 @@ body {
     flex-direction: column;
     margin-right: 52px;
     justify-content: space-around;
+    font-size: 20px;
 }
 
 .movie-details {
@@ -73,14 +69,6 @@ body {
     border-bottom: 1px solid black;
 }
 
-.gate {
-    width: 82px;
-}
-
-.seat {
-    width: 92px;
-}
-
 .ticket-number {
     border-bottom: 1px solid black;
     width: 100%;
@@ -95,6 +83,7 @@ body {
 .popcorn-image-container {
     display: flex;
     margin: 0 45px;
+    transition: 1s;
 }
 
 .popcorn-cup {
@@ -146,4 +135,14 @@ body {
     transition: 1s;
     margin-top: -10px;
     rotate: -7deg;
+}
+
+.popcorn-cup:not(:hover) img{
+    transition: 2s;
+    margin-top: 0;
+}
+
+.small-popcorn:not(:hover) {
+    transition: 0.5s;
+    opacity: 0;
 }
