@@ -1,7 +1,6 @@
-.roboto-regular {
+body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-style: normal;
 }
 
 .ticket-container {
@@ -20,75 +19,73 @@
 .ticket-text {
     text-transform: uppercase;
     font-size: 55px;
-    width: 206px;
-    height: 128px;
     margin: 26px 0 0 20px;
 }
 
-.ticket-details {
+.ticket-details-container {
     display: flex;
     justify-content: flex-start;
 }
 
-.ticket-details div {
+.ticket-details {
+    width: 82px;
+    height: 44px;
+    border: solid 1px black;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    margin-bottom: 39px;
 }
 
 .ticket-category {
-    width: 82px;
-    height: 44px;
-    margin: 36px 30px 39px 27px;
-    border: solid 1px black;
-    font-size: 20px;
-    justify-content: center;
+    margin-right: 30px;
+    margin-left:27px;
     text-transform: uppercase;
 }
 
 .ticket-price {
-    width: 82px;
-    height: 44px;
-    margin-top: 36px;
     margin-left: 10px;
-    margin-bottom: 39px;
-    border: solid 1px black;
-    font-size: 20px;
-    justify-content: center;
 }
 
-.movie-details {
+.movie-details-container {
     display: flex;
     flex-direction: column;
     margin-right: 52px;
     justify-content: space-around;
 }
 
-.movie-hour {
-    margin-top: 26px;
-    width: 85px;
+.movie-details {
     height: 23px;
 }
 
-.movie-localisation {
+.movie-hour {
+    margin-top: 26px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.movie-location {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid black;
 }
 
 .gate {
     width: 82px;
-    height: 23px;
 }
 
 .seat {
     width: 92px;
-    height: 23px;
 }
 
 .ticket-number {
-    width: 177px;
-    height: 23px;
+    border-bottom: 1px solid black;
+    width: 100%;
 }
+
 .entrance-coupon {
     border-left: 1px solid;
     border-left-style: dashed;
@@ -97,24 +94,51 @@
 
 .popcorn-image-container {
     display: flex;
-    margin: 45px;
+    margin: 0 45px 45px 45px ;
+}
+
+.popcorn-cup {
+    margin-top: 45px;
+    position: absolute;
 }
 
 .small-popcorn {
     position: absolute;
     margin-left: 25px;
-    margin-top: 20px;
+    margin-top: 50px;
     opacity: 0;
 }
 
 .popcorn-image-container:hover .small-popcorn {
-    transition: 2s;
-    margin-top: 0;
+    transition: 1s;
+    margin: 0;
+    padding: 0;
     opacity: 1;
 }
 
-.popcorn-cup:hover {
-    transition: 2s;
+.popcorn-image-container:hover .left-popcorn {
+    transition: 1s;
+    margin-top: 15px;
+    opacity: 1;
+    padding: 20px 0;
+}
+
+.popcorn-image-container:hover .middle-popcorn {
+    transition: 1s;
+    margin-top: 0;
+    opacity: 1;
+    padding: 30px 20px;
+}
+
+.popcorn-image-container:hover .right-popcorn {
+    transition: 1s;
+    margin-top: 15px;
+    opacity: 1;
+    padding: 20px 15px;
+}
+
+.popcorn-cup:hover img{
+    transition: 1s;
     margin-top: 20px;
-    rotate: -5deg;
+    rotate: -7deg;
 }
