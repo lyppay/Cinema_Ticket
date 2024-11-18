@@ -94,11 +94,12 @@ body {
 
 .popcorn-image-container {
     display: flex;
-    margin: 0 45px 45px 45px ;
+    margin: 0 45px;
 }
 
 .popcorn-cup {
     margin-top: 45px;
+    margin-bottom: 45px;
     position: absolute;
 }
 
@@ -118,27 +119,31 @@ body {
 
 .popcorn-image-container:hover .left-popcorn {
     transition: 1s;
-    margin-top: 15px;
+    margin-top: 25px;
+    margin-left: -10px;
     opacity: 1;
-    padding: 20px 0;
+    padding: -10px 0;
 }
 
 .popcorn-image-container:hover .middle-popcorn {
     transition: 1s;
     margin-top: 0;
+    margin-left: 20px;
+    margin-right: 10px;
     opacity: 1;
-    padding: 30px 20px;
+    padding: 10px 10px;
 }
 
 .popcorn-image-container:hover .right-popcorn {
     transition: 1s;
-    margin-top: 15px;
+    margin-top: 25px;
+    margin-left: 10px;
     opacity: 1;
-    padding: 20px 15px;
+    padding: 0 10px;
 }
 
 .popcorn-cup:hover img{
     transition: 1s;
-    margin-top: 20px;
+    margin-top: -10px;
     rotate: -7deg;
 }
