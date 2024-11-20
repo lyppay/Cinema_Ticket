@@ -82,16 +82,18 @@ body {
     transition: 1s;
 }
 
-.popcorn-cup {
-    margin-top: 45px;
+.popcorn-cup img {
+    margin-top: 55px;
     margin-bottom: 45px;
     position: absolute;
+    transition: 1s;
 }
 
 .small-popcorn {
     position: absolute;
     margin-left: 25px;
     margin-top: 50px;
+    transition: 0.5s;
     opacity: 0;
 }
 
@@ -129,16 +131,6 @@ body {
 
 .popcorn-cup:hover img{
     transition: 1s;
-    margin-top: -10px;
+    margin-top: 30px;
     rotate: -7deg;
-}
-
-.popcorn-cup:not(:hover) img{
-    transition: 2s;
-    margin-top: 0;
-}
-
-.small-popcorn:not(:hover) {
-    transition: 0.5s;
-    opacity: 0;
 }
