@@ -129,7 +129,7 @@ body {
     padding: 0 10px;
 }
 
-.popcorn-cup:hover img{
+.popcorn-cup:hover img {
     transition: 1s;
     margin-top: 30px;
     rotate: -7deg;
