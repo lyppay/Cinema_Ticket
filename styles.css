@@ -1,0 +1,136 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.ticket-container {
+    margin: 50px 0 0 50px;
+    width: 782px;
+    height: 273px;
+    background: #EFC684;
+    border-radius: 10px;
+    display: flex;
+}
+
+.main-section {
+    width: 37%;
+}
+
+.ticket-text {
+    text-transform: uppercase;
+    font-size: 55px;
+    margin: 26px 0 0 20px;
+}
+
+.ticket-details-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 30px;
+}
+
+.ticket-details {
+    width: 82px;
+    height: 44px;
+    border: solid 1px black;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    margin-bottom: 39px;
+}
+
+.ticket-category {
+    text-transform: uppercase;
+}
+
+.movie-details-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 52px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.movie-hour {
+    margin-top: 26px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.movie-location {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.ticket-number {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.entrance-coupon {
+    border-left: 1px solid;
+    border-left-style: dashed;
+    border-color: #DB0808;
+}
+
+.popcorn-image-container {
+    display: flex;
+    margin: 0 45px;
+    transition: 1s;
+}
+
+.popcorn-cup img {
+    margin-top: 55px;
+    margin-bottom: 45px;
+    position: absolute;
+    transition: 1s;
+}
+
+.small-popcorn {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 50px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.popcorn-image-container:hover .small-popcorn {
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+}
+
+.popcorn-image-container:hover .left-popcorn {
+    transition: 1s;
+    margin-top: 25px;
+    margin-left: -10px;
+    opacity: 1;
+    padding: -10px 0;
+}
+
+.popcorn-image-container:hover .middle-popcorn {
+    transition: 1s;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 10px;
+    opacity: 1;
+    padding: 10px 10px;
+}
+
+.popcorn-image-container:hover .right-popcorn {
+    transition: 1s;
+    margin-top: 25px;
+    margin-left: 10px;
+    opacity: 1;
+    padding: 0 10px;
+}
+
+.popcorn-cup:hover img {
+    transition: 1s;
+    margin-top: 30px;
+    rotate: -7deg;
+}
